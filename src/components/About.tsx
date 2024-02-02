@@ -1,8 +1,9 @@
 import React from 'react'
+import { productsList } from '../../public/data/data'
 
 function About() {
   return (
-    <div className='px-6 bg-[#DFE3E4]] py-12 w-full flex flex-col items-center'>
+    <div className='px-6 bg-[#DFE3E4] text-black py-12 w-full flex flex-col items-center'>
       <p className='font-semibold text-center text-xl 2xl:text-2xl 3xl:text-3xl font-merriweather-sans 3xl:my-8'>About Company</p>
       <p className='mt-4 text-justify md:w-3/4 text-base 3xl:text-2xl'>
       Welcome to Evyco, your dedicated partner for 
@@ -18,6 +19,16 @@ function About() {
         Step into a world where diversity thrives, and options abound. From the tantalizing flavors of fine cuisine to the sleek efficiency of automotive engineering; from the comfort of home furnishings to the thrill of adventure gear, we offer an unparalleled array of products to cater to every taste and requirement.
         Embark on a journey of exploration as you peruse our vast catalogue, spanning from the latest in electronics to the timeless elegance of fashion; from the precision of machinery to the warmth of household necessities. Whether you seek the practicality of construction materials or the joy of children's toys, we've curated a collection that promises to delight and inspire. 
       </p>
+      <div className='mt-4 md:w-3/4 text-base 3xl:text-2xl'>
+        <p className='font-semibold'>The company specializes in import and export of a diverse range of products, including but not limited to:</p>
+        <ol>
+          {
+            productsList.map((el, i) => (
+              <li key={i}>{`${i+1}- ${el}`}</li>
+            ))
+          }
+        </ol>
+      </div>
       <p className='mt-4 md:w-3/4 text-base 3xl:text-2xl'>
         Read more about our products and services <a className='text-underline hover:underline text-blue-700' href={'/products'}>here</a>.
       </p>

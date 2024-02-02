@@ -21,7 +21,7 @@ const values = [
 
 function Values() {
   return (
-    <div className="p-6 pt-14">
+    <div className="p-6 pt-14 bg-[#DFE3E4] text-black">
       <p className='text-center font-semibold font-merriweather-sans m-6 3xl:my-8 text-xl 2xl:text-2xl 3xl:text-3xl'>With every interaction we:</p>
       <div className='flex flex-col justify-around items-center min-[600px]:flex-row'>
         {

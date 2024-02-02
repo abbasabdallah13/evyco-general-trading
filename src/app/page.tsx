@@ -19,7 +19,7 @@ export default function Home(){
     }, [pathname])
     
     return (
-        <div className="">
+        <div className="bg-[#DFE3E4] text-black">
             <Toaster />
             <Header />
             <About />
