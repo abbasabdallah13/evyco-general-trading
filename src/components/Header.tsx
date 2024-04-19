@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Header() {
   return (
-    <div className='flex flex-col items-center lg:h-screen z-[-1] w-full mt-[88px] lg:mt-0'>
+    <div className='flex flex-col items-center lg:h-screen z-[-1] w-full mt-[70px] lg:mt-0'>
       <div className='relative w-full h-full'>
         <div className='bg-black opacity-50 absolute top-0 left-0 w-full h-full'></div>
         <Image className='w-full h-full max-h-full' src={computerImg} alt="computer" />

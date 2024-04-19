@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function page() {
   return (
-    <div className='bg-white p-2 pb-8 min-h-screen mt-[88px] 2xl:mt-24 3xl:mt-32'>
+    <div className='bg-white p-2 pb-8 min-h-screen mt-[70px] 2xl:mt-24 3xl:mt-32'>
         <p className='text-xl 3xl:text-4xl text-black font-semibold'>Products and services</p>
         <p className='text-sm ml-2 text-[#7b7b7b] 3xl:text-lg'>Explore our comprehensive product and service offerings</p>
         {
