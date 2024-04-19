@@ -11,16 +11,25 @@ import { links } from '../../public/data/data';
 function Navbar() {
   const [sidebar, setSidebar] = useState(false)
   return (
-    <div className='fixed top-0 left-0 w-full bg-black/75 p-2 flex justify-between items-center z-20'>
+    <div className='fixed top-0 left-0 w-full bg-white/75 p-2 flex justify-between items-center z-20'>
         <Link href="/" className='lg:ml-4'>
           <div className='flex gap-x-2 items-center'>
-            <Image className='2xl:w-20 2xl:h-20 3xl:w-28 3xl:h-28' src={Logo} alt="logo" width={52} height={52} />
-            <p className='hidden lg:block text-white uppercase text-base 2xl:text-base 3xl:text-lg'>Evyco general trading</p>
+            <Image className='2xl:w-20 2xl:h-20 3xl:w-28 3xl:h-28' src={Logo} alt="logo" width={72} height={72} />
+            <div className='hidden lg:block flex flex-col items-center text-base 2xl:text-base 3xl:text-lg leading-3'>
+              <p className='uppercase font-bold text-2xl text-center'>evyco</p>
+              <p className='text-sm mr-2 relative text-[#769CB7] font-semibold text-center'>General Trading</p>
+              <p className='italic text-[10px] relative mr-2 text-center'>Import Export</p>
+            </div>
           </div>
         </Link>
+        <div className='flex flex-col items-center lg:hidden relative right-2'>
+          <p className='uppercase font-bold text-2xl'>evyco</p>
+          <p className='text-sm mr-2 relative bottom-[5px] text-[#769CB7] font-semibold'>General Trading</p>
+          <p className='italic text-[10px] relative bottom-[5px] mr-2'>Import Export</p>
+        </div>
       {/* burger menu and sidebar that is visible by default, hidden on large screens */}
       <RxHamburgerMenu 
-        className='text-white text-4xl lg:hidden'
+        className='text-black text-4xl lg:hidden'
         onClick={() => setSidebar(true)}
       />
       {
@@ -53,7 +62,7 @@ function Navbar() {
           links.map((link, i) => (
             <li key={i} className={`${i === 2 && 'mr-8'} inline-block ml-8 hover:underline`}>
               <a 
-                className='text-white text-normal 2xl:text-base 3xl:text-lg'
+                className='text-black text-normal 2xl:text-base 3xl:text-lg'
                 href={link.link}
               >
                 {link.name}

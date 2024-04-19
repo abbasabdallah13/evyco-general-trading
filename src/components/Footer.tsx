@@ -5,7 +5,7 @@ import { contactInfo, links } from '../../public/data/data'
 
 function Footer() {
   return (
-    <div className='flex flex-col bg-[#F4EDED] text-black py-4'>
+    <div className='flex flex-col bg-[#D4D3D3] text-black py-4'>
       <div className='flex items-center justify-center'>
         <Image src={Logo} alt="logo" width={50} height={50} />
         <p className='uppercase ml-2 font-semibold'>evyco general trading</p>

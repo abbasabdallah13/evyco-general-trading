@@ -1,4 +1,4 @@
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaMobileAlt } from "react-icons/fa";
 import { MdOutlineMailOutline, MdLocationOn } from "react-icons/md";
 
 
@@ -20,13 +20,21 @@ export const links = [
   export const contactInfo = [
     {
       icon: <FaPhoneAlt />,
+      title: "Telephone",
+      value: "+961 1 379 919",
+      href: "tel:+9611379919"
+    },
+    {
+      icon: <FaMobileAlt />,
       title: "Mobile",
-      value: "+961 3 205 747"
+      value: "+961 3 205 747",
+      href: "tel:+9613205747"
     },
     {
       icon: <MdOutlineMailOutline />,
       title: "Email",
-      value: "evyco.trading@hotmail.com"
+      value: "evyco.trading@hotmail.com",
+      href: "mailto:evyco.trading@hotmail.com?subject=New%20Enquiry"
     },
     {
       icon: <MdLocationOn />,

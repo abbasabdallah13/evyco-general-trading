@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 function page() {
   return (
-    <div className='bg-white p-2 pb-8 min-h-screen mt-[62px] 2xl:mt-24 3xl:mt-32'>
-        <p className='text-xl 3xl:text-4xl text-black'>Products and services</p>
+    <div className='bg-white p-2 pb-8 min-h-screen mt-[88px] 2xl:mt-24 3xl:mt-32'>
+        <p className='text-xl 3xl:text-4xl text-black font-semibold'>Products and services</p>
         <p className='text-sm ml-2 text-[#7b7b7b] 3xl:text-lg'>Explore our comprehensive product and service offerings</p>
         {
             categoriesAndProducts.map((category, i) =>(
                 <div key={i}>
-                    <p className='text-xl mt-6 my-4 font-semibold 3xl:text-3xl text-black'>{category.title}</p>
+                    <p className='text-xl mt-6 my-4 font-medium 3xl:text-3xl text-black'>{category.title}</p>
                     <div className='flex flex-wrap'>
                     {
                         category.products.map((product, i) => (

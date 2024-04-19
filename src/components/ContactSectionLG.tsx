@@ -23,7 +23,7 @@ function ContactSectionLG() {
                 {
                     contactInfo.map((item, i) => (
                     <div key={i} className='flex items-center mt-3 w-[310px] md:min-w-[330px] 2xl:w-full 2xl:text-base 3xl:text-2xl'>
-                        <div className='w-10 h-10 bg-black p-2 text-3xl rounded-full flex justify-center items-center'>{item.icon}</div>
+                        <div className={`${i === 1 ? 'text-[1.5rem]' : 'text-3xl'} w-10 h-10 bg-black p-2 rounded-full flex justify-center items-center`}>{item.icon}</div>
                         <p className='font-bold ml-2'>{item.title}:</p>
                         <p className="ml-[2px]">{item.value}</p>
                     </div>
