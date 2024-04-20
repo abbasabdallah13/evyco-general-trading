@@ -12,8 +12,8 @@ import NavbarDesign from '../../public/assets/navbar-design.png'
 function Navbar() {
   const [sidebar, setSidebar] = useState(false)
   return (
-    <div className='fixed top-0 left-0 w-full bg-white/75 flex justify-between items-center z-20'>
-        <Image src={NavbarDesign} alt="black design" width={72} height={72} className='absolute right-0' />
+    <div className='fixed top-0 left-0 w-full bg-white/75 flex justify-between items-center z-20 lg:p-2'>
+        <Image src={NavbarDesign} alt="black design" width={72} height={72} className='absolute right-0 lg:hidden' />
         <Link href="/" className='lg:ml-4'>
           <div className='flex gap-x-2 items-center'>
             <Image className='2xl:w-20 2xl:h-20 3xl:w-28 3xl:h-28' src={Logo} alt="logo" width={72} height={72} />
